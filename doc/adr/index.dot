@@ -1,0 +1,18 @@
+digraph {
+  node [shape=plaintext];
+  subgraph {
+    _1 [label="1. Record architecture decisions"; URL="0001-record-architecture-decisions.html"];
+    _2 [label="2. Keep profiling in the current HR System"; URL="0002-keep-profiling-in-the-current-hr-system.html"];
+    _1 -> _2 [style="dotted", weight=1];
+    _3 [label="3. Use MS-0365 for scheduling"; URL="0003-use-ms-0365-for-scheduling.html"];
+    _2 -> _3 [style="dotted", weight=1];
+    _4 [label="4. decouple HR++"; URL="0004-decouple-hr.html"];
+    _3 -> _4 [style="dotted", weight=1];
+    _5 [label="5. Running and enrolling are deployed together"; URL="0005-running-and-enrolling-are-deployed-together.html"];
+    _4 -> _5 [style="dotted", weight=1];
+    _6 [label="6. Append only store for attendenace"; URL="0006-append-only-store-for-attendenace.html"];
+    _5 -> _6 [style="dotted", weight=1];
+  }
+  _4 -> _2 [label="details", weight=0]
+  _6 -> _5 [label="details", weight=0]
+}

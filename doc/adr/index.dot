@@ -12,6 +12,8 @@ digraph {
     _4 -> _5 [style="dotted", weight=1];
     _6 [label="6. Append only store for attendenace"; URL="0006-append-only-store-for-attendenace.html"];
     _5 -> _6 [style="dotted", weight=1];
+    _7 [label="7. use container instances for back end components"; URL="0007-use-container-instances-for-back-end-components.html"];
+    _6 -> _7 [style="dotted", weight=1];
   }
   _4 -> _2 [label="details", weight=0]
   _6 -> _5 [label="details", weight=0]

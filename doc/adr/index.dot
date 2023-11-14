@@ -14,7 +14,14 @@ digraph {
     _5 -> _6 [style="dotted", weight=1];
     _7 [label="7. use container instances for back end components"; URL="0007-use-container-instances-for-back-end-components.html"];
     _6 -> _7 [style="dotted", weight=1];
+    _8 [label="8. separate deployment of course development from runnning and enrolling"; URL="0008-separate-course-development-from-runnning-and-enrolling.html"];
+    _7 -> _8 [style="dotted", weight=1];
+    _9 [label="9. use events for communicating between components"; URL="0009-use-events-for-communicating-between-components.html"];
+    _8 -> _9 [style="dotted", weight=1];
   }
   _4 -> _2 [label="details", weight=0]
   _6 -> _5 [label="details", weight=0]
+  _7 -> _8 [label="details", weight=0]
+  _9 -> _8 [label="details", weight=0]
+  _9 -> _4 [label="details", weight=0]
 }

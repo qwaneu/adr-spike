@@ -18,6 +18,8 @@ digraph {
     _7 -> _8 [style="dotted", weight=1];
     _9 [label="9. use events for communicating between components"; URL="0009-use-events-for-communicating-between-components.html"];
     _8 -> _9 [style="dotted", weight=1];
+    _10 [label="10. use event grid for event transport"; URL="0010-use-event-grid-for-event-transport.html"];
+    _9 -> _10 [style="dotted", weight=1];
   }
   _4 -> _2 [label="details", weight=0]
   _6 -> _5 [label="details", weight=0]

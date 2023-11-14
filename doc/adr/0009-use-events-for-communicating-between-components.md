@@ -10,6 +10,8 @@ details [8. separate deployment of course development from runnning and enrollin
 
 details [4. decouple HR++](0004-decouple-hr.md)
 
+detailed by [10. use event grid for event transport](0010-use-event-grid-for-event-transport.md)
+
 ## Context
 
 We decided to decouple HR++ and to have separate deployments of some components (notably course development separated from running and enrolling). These separate deployments are not effective when they are coupled by point to point synchronous communication. They would depend on each others presence then. Moreover, the status updates in the communication between these components eventually consistent.

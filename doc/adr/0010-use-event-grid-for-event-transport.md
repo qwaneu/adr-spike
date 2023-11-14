@@ -6,6 +6,8 @@ Date: 2023-11-14
 
 Accepted
 
+details [9. use events for communicating between components](0009-use-events-for-communicating-between-components.md)
+
 ## Context
 
 We want event based communication to be asynchronous and based on azure cloud native services. We do not want to maintain our own kafka installation.

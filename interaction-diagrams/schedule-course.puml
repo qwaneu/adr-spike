@@ -1,0 +1,13 @@
+@startuml
+Title Schedule Courses
+actor Scheduler
+participant Scheduling
+boundary "Office 365" as MSGraph
+
+Scheduling -> MSGraph : Add Curriculum as resource for scheduling
+group for all courses in curriculum
+      Scheduler -> MSGraph : Schedule course
+      MSGraph -\ Scheduling : Course Scheduled
+end
+Scheduling -\ Enrolling : Curriculum Scheduled
+@enduml

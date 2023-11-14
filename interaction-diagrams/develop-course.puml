@@ -1,0 +1,19 @@
+@startuml
+Title Developing courses
+actor Teacher
+actor Reviewer
+participant "Curriculum Development" as Courses
+participant Scheduling
+boundary "Office 365" as MSGraph
+
+Teacher -> Courses : create curriculum
+Teacher -> Courses : add course to curriculum
+Teacher -> Courses : add course prerequisite
+Teacher -> Courses : apply for publication
+Courses -> Reviewer : curriculum was applied for publicaction
+Reviewer -> Courses : review curriculum
+Courses -> Teacher : review successful
+Teacher -> Courses : publish curriculum
+Courses -\ Scheduling : Curriculum was published
+Scheduling -> MSGraph : Add Curriculum as resource for scheduling
+@enduml

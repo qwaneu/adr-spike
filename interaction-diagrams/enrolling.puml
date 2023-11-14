@@ -1,0 +1,33 @@
+@startuml
+Title Enrolling
+actor Employee
+participant Scheduling
+participant Enrolling
+actor Teacher
+
+Scheduling -\ Enrolling : Curriculum Scheduled
+group for some employees
+    Employee -> Enrolling : <color:blue>Enroll</color>
+    Enrolling -\ Teacher : Student enrolled
+end
+Teacher -> Enrolling : Apply Homework
+group for all participants
+    Enrolling -\ Employee : Do Homework
+end
+group until training full
+    Employee -> Enrolling : Enroll
+    Enrolling -\ Employee : Do Homework
+end
+
+group for all participants
+    Enrolling -\ Employee : please confirm registration
+end
+group for all participants
+    Employee -> Enrolling :  confirm registration
+    Employee -> Enrolling : Send in homework
+    Enrolling -\ Teacher : Homework Employee X Done
+end
+
+
+
+@enduml

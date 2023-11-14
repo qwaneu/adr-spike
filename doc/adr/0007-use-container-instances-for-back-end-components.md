@@ -6,6 +6,10 @@ Date: 2023-11-06
 
 Accepted
 
+details [1. Record architecture decisions]()
+
+details [8. separate deployment of course development from runnning and enrolling](0008-separate-course-development-from-runnning-and-enrolling.md)
+
 ## Context
 
 We have some back end components that need to be deployed independently. They are java or kotlin based component based on the spring framework. We think that function apps may be a bit slow to load (because of spring) and we do not need the scaleability function apps bring. 
